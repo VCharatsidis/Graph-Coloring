@@ -1,26 +1,19 @@
-
-
-
 // reading a text file
-#include <iostream>
-#include <fstream>
-#include <string>
+#include "GraphReader.cpp"
 using namespace std;
 
 int main() {
-	string line;
-	ifstream myfile("graphs/gc_4_1");
+	
+	//Test GraphReader
+	GraphReader* gr = new GraphReader();
 
-	if (myfile.is_open())
+	Graph* graph = gr->read("4_1");
+
+	for (int i = 0; i < graph->nodes.size(); i++)
 	{
-		while (getline(myfile, line))
-		{
-			cout << line << '\n';
-		}
-		myfile.close();
+		int node_id = graph->nodes[i]->id;
+		std::cout << "node id " + std::to_string(node_id) << std::endl;
 	}
-
-	else cout << "Unable to open file";
 
 	return 0;
 }

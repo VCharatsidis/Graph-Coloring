@@ -3,5 +3,5 @@
 struct Node {
 	int id;
 	std::vector<int> neightbours;
-	int available_colors[];
+	std::vector<int> available_colors;
 };
