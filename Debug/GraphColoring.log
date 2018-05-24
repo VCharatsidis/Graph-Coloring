@@ -1,3 +1,8 @@
-﻿  GraphReader.cpp
+﻿  Solver.cpp
+  Node.cpp
+  Main.cpp
+  GraphMaker.cpp
+  Graph.cpp
+  Generating Code...
   GraphColoring.vcxproj -> C:\Users\vcharatsidis\Documents\Visual Studio 2017\Projects\GraphColoring\Debug\GraphColoring.exe
   GraphColoring.vcxproj -> C:\Users\vcharatsidis\Documents\Visual Studio 2017\Projects\GraphColoring\Debug\GraphColoring.pdb (Partial PDB)
