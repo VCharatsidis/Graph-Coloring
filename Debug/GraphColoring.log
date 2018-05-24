@@ -1,6 +1,8 @@
 ﻿  Solver.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Node.cpp
   Main.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   GraphMaker.cpp
   Graph.cpp
   Generating Code...
