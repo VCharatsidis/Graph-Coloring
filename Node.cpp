@@ -1,3 +1,5 @@
+#ifndef NODE_H
+#define NODE_H
 #include <vector>
 
 struct Node {
@@ -6,3 +8,5 @@ struct Node {
 	std::vector<int> available_colors;
 	int color = -1;
 };
+
+#endif

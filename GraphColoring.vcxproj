@@ -111,6 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Comparator.cpp" />
     <ClCompile Include="Graph.cpp" />
     <ClCompile Include="GraphMaker.cpp" />
     <ClCompile Include="Main.cpp" />

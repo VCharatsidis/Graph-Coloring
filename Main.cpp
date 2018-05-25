@@ -1,6 +1,9 @@
 // reading a text file
 #include "GraphMaker.cpp"
 #include "Solver.cpp"
+#include <queue>;
+#include "Comparator.cpp"
+
 using namespace std;
 
 void print_neighbours(Graph* graph)
@@ -158,8 +161,20 @@ int main() {
 	print_neighbours(test_solver->core);*/
 
 	//Test max_node
-	Solver* solver = new Solver(graph);
+	/*Solver* solver = new Solver(graph);
 	Node* max = solver->max_node(graph);
-	cout << "max node " + std::to_string(max->id) + " neighbours " + std::to_string(max->neighbours.size())<<std::endl;
+	cout << "max node " + std::to_string(max->id) + " neighbours " + std::to_string(max->neighbours.size())<<std::endl;*/
+
+	//Test build_hierarchy
+	Solver* solver = new Solver(graph);
+	std::priority_queue<Node*, vector<Node*>, Comparator> hierarchy = solver->build_hierarchy(graph);
+	cout << "hierarch size " + std::to_string(hierarchy.size()) << std::endl;
+
+	while (!hierarchy.empty())
+	{
+		Node* node = hierarchy.top();
+		cout << "node " + std::to_string(node->id) + " neighbours " + std::to_string(node->neighbours.size()) << std::endl;
+		hierarchy.pop();
+	}
 	return 0;
 }

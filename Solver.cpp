@@ -1,6 +1,12 @@
+#ifndef SOLVER_H
+#define SOLVER_H
+
 #include "Graph.cpp";
 #include <iostream>
 #include <string>
+#include <queue>;
+#include "Comparator.cpp"
+
 using std::vector;
 
 class Solver {
@@ -8,6 +14,19 @@ public:
 	Graph* graph;
 	Solver(Graph* give_graph) : graph(give_graph) {};
 	Graph* core;
+	
+	std::priority_queue<Node*, vector<Node*>, Comparator> build_hierarchy(Graph* a_graph)
+	{
+		std::priority_queue<Node*, vector<Node*>, Comparator> hierarchy;
+		int size = a_graph->nodes.size();
+
+		for (int i = 0; i < size; i++)
+		{
+			hierarchy.push(a_graph->nodes[i]);
+		}
+
+		return hierarchy;
+	}
 
 	Node* max_node(Graph* a_graph)
 	{
@@ -103,3 +122,5 @@ private:
 		}
 	}
 };
+
+#endif

@@ -1,10 +1,6 @@
-﻿  Solver.cpp
-c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Node.cpp
-  Main.cpp
-c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  GraphMaker.cpp
-  Graph.cpp
-  Generating Code...
+﻿  Main.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\solver.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\vcharatsidis\documents\visual studio 2017\projects\graphcoloring\graphcoloring\main.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   GraphColoring.vcxproj -> C:\Users\vcharatsidis\Documents\Visual Studio 2017\Projects\GraphColoring\Debug\GraphColoring.exe
   GraphColoring.vcxproj -> C:\Users\vcharatsidis\Documents\Visual Studio 2017\Projects\GraphColoring\Debug\GraphColoring.pdb (Partial PDB)
