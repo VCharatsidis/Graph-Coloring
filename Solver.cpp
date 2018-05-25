@@ -9,6 +9,26 @@ public:
 	Solver(Graph* give_graph) : graph(give_graph) {};
 	Graph* core;
 
+	Node* max_node(Graph* a_graph)
+	{
+		int size = a_graph->nodes.size();
+		int max = 0;
+		Node* max_node = NULL;
+
+		for (int i = 0; i < size; i++)
+		{
+			int neighbours = a_graph->nodes[i]->neighbours.size();
+			
+			if (neighbours > max)
+			{
+				max = neighbours;
+				max_node = a_graph->nodes[i];
+			}
+		}
+
+		return max_node;
+	}
+
 	void solve() {
 		core = graph->clone();
 		int size = graph->nodes.size();

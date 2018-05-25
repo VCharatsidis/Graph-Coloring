@@ -79,10 +79,10 @@ int main() {
 	}*/
 
 	//Test solver core
-	Solver* solver = new Solver(graph);
+	/*Solver* solver = new Solver(graph);
 	solver->solve();
 
-	print_neighbours(solver->core);
+	print_neighbours(solver->core);*/
 
 	//Test core 2
 	/*Node* n0 = new Node();
@@ -156,6 +156,10 @@ int main() {
 	Solver* test_solver = new Solver(test);
 	test_solver->solve();
 	print_neighbours(test_solver->core);*/
-	
+
+	//Test max_node
+	Solver* solver = new Solver(graph);
+	Node* max = solver->max_node(graph);
+	cout << "max node " + std::to_string(max->id) + " neighbours " + std::to_string(max->neighbours.size())<<std::endl;
 	return 0;
 }
